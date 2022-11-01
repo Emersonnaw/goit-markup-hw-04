@@ -10,13 +10,24 @@
     --logo-studio-color:#000000; 
     --accent-color:		#2196F3;
     --focus-btn-hero :#188CE8;
+    --bg-color-hiro:#C4C4C4;
+    --social-icon-defolt-color: #AFB1B8;
 
     
 }
 /* Background Header, Footer */
 /* changet it need chandde footer title */
 .hero-section{
-    background-color:var( --background-header-footer);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hiro-img.jpg);
+    background-color:var( --bg-color-hiro);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    max-width: 1600px;
+   
+   
     text-align: center;
 }
 body {
@@ -144,7 +155,7 @@ ul {
 }
 
 .link-color {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -155,6 +166,12 @@ ul {
     color:var(--main-color-2);
 
      
+}
+
+.nav-icon {
+
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* --------------
@@ -245,7 +262,22 @@ ul {
     margin-right: 30px;
 }
 
+/* Icons for benefits */
+.icon-benefit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom:30px ;
 
+    background: var(--our-team-background);
+    border-radius: 4px;
+}
+ .icon-bnf {
+
+    
+ }
 
 /* Benefits title style */
 .benefits-title {
@@ -364,16 +396,105 @@ ul {
     letter-spacing: 0.03em;
     color:var(--main-color-2);
 }
+
+
+/* Social networs logo */
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    
+  
+}
+.social {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    color:var(--social-icon-defolt-color) ;
+    background-color: var(--main-color-4);
+    border-radius: 50%;
+    border: none;
+}
+.social-icon {
+    fill: currentColor;
+}
+.social:hover,
+.social:focus {
+    background-color: var(--main-color-3);
+    color: var(--main-color-4)
+}
+/* -- -----------------------
+         SECTION REGULAR CUSTOMERS
+         -------------------------  */
+
+.regular-customers {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--main-color-4);
+}
+
+.regular-customers-title {
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-color-1);
+    
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;    
+    gap: 30px;
+    
+}
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px ;
+    border: 1px solid var(--social-icon-defolt-color);
+    border-radius: 4px;
+
+    color: var(--social-icon-defolt-color);
+
+}
+.customer-logo {
+    fill:currentColor;
+}
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
  /* ----------- */
 /*     FOOTER */
 /* -------------- */
 
+/* givinf background footer  */
 .footer-background {
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color:var( --background-header-footer);
     text-align: left;
+}
+
+/* align 2 div  for line*/
+.align-div {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;  
 }
 .logo-footer-link {
     display: block;
@@ -414,13 +535,47 @@ ul {
 
     text-decoration: none;
 }
+.footer-title {
+    margin-bottom: 20px;
 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
+    color:var(--main-color-4);
 
+}
 
+.footer-icon {
+    display: flex;
+    gap: 10px;
+}
 
+.footer-links-social {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
 
+    color: var(--main-color-4);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 50%;
+    border: none;
+}
 
+.social-icon {
+    fill:currentColor:
+
+}
+
+.footer-links-social:hover,
+.footer-links-social:focus {
+    background-color: var(--accent-color);
+}
 
 
 
@@ -497,7 +652,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    backgrounteam-info
+    /* backgrounteam-info */
     color: var(--main-color-4);
 }
 .projects-link {
@@ -506,6 +661,14 @@ ul {
 .img-block {
     display: block;
 }
+/* Effects on the card */
+.img-block:hover,
+.img-block:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-wrapper {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
